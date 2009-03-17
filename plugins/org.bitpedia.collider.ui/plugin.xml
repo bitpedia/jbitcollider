@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 0.4" "http://jpf.sourceforge.net/plugin_0_4.dtd">
+<plugin id="org.bitpedia.collider.ui" version="0.0.1" class="org.bitpedia.collider.ui.AppPlugin">
+	<requires>
+		<import plugin-id="org.bitpedia.collider.core"/>
+	</requires>
+	<runtime>
+	    <library id="ui" path="bin/" type="code">
+	        <export prefix="*"/>
+	    </library>	
+	    <library id="browserlaunch" path="lib/BrowserLauncher2-10rc4.jar" type="code"/>
+	</runtime>
+</plugin>

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 0.4" "http://jpf.sourceforge.net/plugin_0_4.dtd">
+<plugin id="org.bitpedia.collider.vorbis" version="0.0.1">
+	<requires>
+		<import plugin-id="org.bitpedia.collider.core"/>
+	</requires>
+	<runtime>
+	    <library id="vorbis" path="bin/" type="code">
+	        <export prefix="*"/>
+	    </library>	
+	    <library id="vorbisspi" path="lib/vorbisspi1.0.2.jar" type="code"/>
+	    <library id="jorbis" path="lib/jorbis-0.0.15.jar" type="code"/>
+	    <library id="tritonus" path="lib/tritonus_share.jar" type="code"/>
+	    <library id="jogg" path="lib/jogg-0.0.7.jar" type="code"/>
+	</runtime>
+	<extension plugin-id="org.bitpedia.collider.core" point-id="FormatHandler" id="Vorbis">
+		<parameter id="class" value="org.bitpedia.collider.vorbis.VorbisFormatHandler"/>
+	</extension>
+</plugin>

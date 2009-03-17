@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 0.4" "http://jpf.sourceforge.net/plugin_0_4.dtd">
+<plugin id="org.bitpedia.collider.video" version="0.0.1">
+	<requires>
+		<import plugin-id="org.bitpedia.collider.core"/>
+	</requires>
+	<runtime>
+	    <library id="video" path="bin/" type="code">
+	        <export prefix="*"/>
+	    </library>	
+	</runtime>
+	<extension plugin-id="org.bitpedia.collider.core" point-id="FormatHandler" id="Video">
+		<parameter id="class" value="org.bitpedia.collider.video.VideoFormatHandler"/>
+	</extension>
+</plugin>
